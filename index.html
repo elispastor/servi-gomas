@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>🔧 SERVIGOMAS · Caucho industrial y automotor</title>
+  
+  <!-- ANTI-CACHÉ -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #1a1a1a; color: #f0f0f0; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+    .btn-wsp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-weight: 600;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .btn-nge {
+      background: #2c3e50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 40px;
+      font-weight: 700;
+      transition: all 0.3s;
+      border: 2px solid #e67e22;
+    }
+    .btn-nge:hover {
+      background: #e67e22;
+      color: #2c3e50;
+      transform: scale(1.05);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.mostrar { display: flex; }
+    .menu-hamburguesa { cursor: pointer; }
+    section { scroll-margin-top: 80px; }
+  </style>
+</head>
+<body class="bg-gray-900">
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/573168224384?text=Hola%2C%20quiero%20consultar%20por%20sus%20productos%20de%20caucho" class="btn-wsp" target="_blank">
+  <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+</a>
+
+<div class="max-w-6xl mx-auto p-4 md:p-6">
+
+  <!-- NAVEGACIÓN (escritorio) -->
+  <nav class="hidden md:flex justify-between items-center bg-[#2c3e50] text-white px-6 py-3 rounded-full mb-6 border-2 border-[#e67e22] shadow-lg sticky top-4 z-50">
+    <div class="font-['Montserrat'] text-2xl font-bold" style="color: #e67e22;">🔧 SERVIGOMAS</div>
+    <div class="flex gap-6">
+      <a href="#inicio" class="hover:text-[#e67e22]">Inicio</a>
+      <a href="#servicios" class="hover:text-[#e67e22]">Servicios</a>
+      <a href="#nosotros" class="hover:text-[#e67e22]">Nosotros</a>
+      <a href="#vmv" class="hover:text-[#e67e22]">VMV</a>
+      <a href="#contacto" class="hover:text-[#e67e22]">Contacto</a>
+      <a href="/formulario-correcciones.html" class="hover:text-[#e67e22] font-bold" style="color: #e67e22;">📝 Actualizar</a>
+    </div>
+  </nav>
+
+  <!-- MENÚ HAMBURGUESA (móvil) -->
+  <div class="md:hidden sticky top-4 z-50">
+    <div class="flex justify-between items-center bg-[#2c3e50] text-white p-4 rounded-2xl mb-4 border-2 border-[#e67e22]">
+      <span class="font-['Montserrat'] text-xl font-bold" style="color: #e67e22;">🔧 SERVIGOMAS</span>
+      <button id="menu-btn" class="menu-hamburguesa text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="bg-[#2c3e50] text-white p-4 rounded-2xl flex-col gap-3 border-2 border-[#e67e22] mb-4">
+      <a href="#inicio" class="block py-2 hover:text-[#e67e22]">Inicio</a>
+      <a href="#servicios" class="block py-2 hover:text-[#e67e22]">Servicios</a>
+      <a href="#nosotros" class="block py-2 hover:text-[#e67e22]">Nosotros</a>
+      <a href="#vmv" class="block py-2 hover:text-[#e67e22]">VMV</a>
+      <a href="#contacto" class="block py-2 hover:text-[#e67e22]">Contacto</a>
+      <a href="/formulario-correcciones.html" class="block py-2 hover:text-[#e67e22] font-bold" style="color: #e67e22;">📝 Actualizar</a>
+    </div>
+  </div>
+
+  <!-- HERO con portada.png -->
+  <section id="inicio" class="mb-12">
+    <div class="relative h-[500px] md:h-[600px] rounded-3xl overflow-hidden border-4 border-[#e67e22] shadow-2xl">
+      <img src="portada.png" alt="SERVIGOMAS" class="w-full h-full object-cover object-center">
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/70 to-transparent pt-20 pb-10">
+        <div class="text-center text-white px-4">
+          <h1 class="text-4xl md:text-6xl font-bold mb-2" style="color: #e67e22;">🔧 SERVIGOMAS</h1>
+          <p class="text-xl md:text-2xl mb-4">Fabricamos todo en caucho para automotor e industria</p>
+          <a href="#contacto" class="btn-nge inline-block">CONTACTAR</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color: #e67e22;">🔧 NUESTROS SERVICIOS</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-5xl mb-2 text-[#e67e22]">🔨</div>
+        <h3 class="font-bold text-xl mb-2">Vulcanización de bujes</h3>
+        <p class="text-sm text-gray-300">Vulcanizamos toda clase de bujes para automotor e industria.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-5xl mb-2 text-[#e67e22]">⚙️</div>
+        <h3 class="font-bold text-xl mb-2">Soporte para motor y caja</h3>
+        <p class="text-sm text-gray-300">Fabricación y reparación de soportes de caucho para motor y transmisión.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-5xl mb-2 text-[#e67e22]">🛞</div>
+        <h3 class="font-bold text-xl mb-2">Gomas de caucho para llantas</h3>
+        <p class="text-sm text-gray-300">Fabricamos todo lo relacionado con gomas de caucho para llantas de automotor y maquinaria industrial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color: #e67e22;">🏢 SOBRE NOSOTROS</h2>
+    <div class="bg-gray-800 p-8 rounded-3xl shadow-lg border-2 border-[#e67e22]">
+      <p class="text-lg mb-4">SERVIGOMAS es una empresa cucuteña con amplia experiencia en la fabricación y vulcanización de productos de caucho para el sector automotor e industrial. Trabajamos con materiales de primera calidad y procesos artesanales que garantizan durabilidad y resistencia.</p>
+      <p class="text-lg">Atendemos talleres, industrias y clientes particulares en Cúcuta y toda la región.</p>
+    </div>
+  </section>
+
+  <!-- VMV -->
+  <section id="vmv" class="mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color: #e67e22;">🎯 VMV</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-4xl mb-2 text-[#e67e22]">🎯</div>
+        <h3 class="font-bold text-xl mb-2" style="color: #e67e22;">Misión</h3>
+        <p>Proveer soluciones de caucho de alta calidad para la industria y el automotor, con procesos confiables y atención personalizada.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-4xl mb-2 text-[#e67e22]">👁️</div>
+        <h3 class="font-bold text-xl mb-2" style="color: #e67e22;">Visión</h3>
+        <p>Ser el taller de referencia en caucho industrial y automotor en Norte de Santander.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+        <div class="text-4xl mb-2 text-[#e67e22]">⭐</div>
+        <h3 class="font-bold text-xl mb-2" style="color: #e67e22;">Valores</h3>
+        <p>Calidad, honestidad, compromiso, innovación y trabajo en equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color: #e67e22;">📍 CONTACTO</h2>
+    <div class="bg-[#2c3e50] text-white p-8 rounded-3xl border-4 border-[#e67e22] text-center">
+      <p class="text-2xl mb-2"><i class="fas fa-phone-alt mr-2"></i> 316 822 4384</p>
+      <p class="text-lg mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Calle 1 #6-11, Barrio Callejón, Cúcuta</p>
+      <p class="text-lg mb-4"><i class="fas fa-globe mr-2"></i> Cúcuta, Colombia</p>
+      <div class="flex justify-center gap-4 mt-4">
+        <a href="https://wa.me/573168224384" class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600">📱 WhatsApp</a>
+        <a href="tel:+573168224384" class="bg-[#e67e22] text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[#2c3e50]">📞 Llamar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-400 border-t-2 border-[#e67e22]">
+    <p>© 2026 SERVIGOMAS · Todos los derechos reservados</p>
+    <p class="mt-2 text-sm">Diseño: <a href="https://wa.me/573244913371" class="text-[#e67e22] font-semibold">NGE Tarjetas Digitales</a></p>
+  </footer>
+
+</div>
+
+<!-- QR -->
+<div class="max-w-xs mx-auto mb-8 p-4 bg-gray-800 rounded-2xl shadow-lg border-2 border-[#e67e22] text-center">
+  <h3 class="font-bold text-[#e67e22] mb-2">📲 Escanea y guarda el contacto</h3>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://servigomas.netlify.app" alt="QR SERVIGOMAS" class="mx-auto rounded-lg">
+  <p class="text-xs text-gray-400 mt-2">Escanea con tu celular</p>
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('mostrar'));
+  document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('mostrar')));
+</script>
+
+</body>
+</html>
